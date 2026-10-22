@@ -18,6 +18,8 @@ next_workspace = "alt+down"
 previous_workspace = "alt+up"
 # Closes the current space (asks first: ui.confirm_close). Ctrl+W no longer reaches the pane (bash delete-word).
 close_workspace = ["prefix+shift+d", "ctrl+w", "alt+w"]
+# Opens a new space (prefix+n stays).
+new_workspace = ["prefix+n", "alt+n"]
 
 [ui.sidebar.spaces]
 rows = [["state_icon", "$index", "workspace"], ["branch", "git_status"]]
