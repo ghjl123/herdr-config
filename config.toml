@@ -2,8 +2,9 @@ onboarding = false
 
 [ui]
 status_indicators = "symbols"
-# Right-click pastes: Windows Terminal handles the mouse, not herdr (no pane menu).
-mouse_capture = false
+# herdr handles the mouse (click a space to open it). It has no right-click paste:
+# Shift+right-click goes to Windows Terminal, which pastes; Ctrl+V pastes too.
+mouse_capture = true
 
 [ui.sound]
 enabled = false
