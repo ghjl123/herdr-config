@@ -26,7 +26,8 @@ Note: `Ctrl+W` closes the space, so it no longer reaches the shell (bash's delet
 ## Requirements
 
 - Windows with herdr installed and on `PATH`.
-- PowerShell 7 (`pwsh`): `space-index.ps1` runs under it.
+- PowerShell: `space-index.ps1` runs under PowerShell 7 (`pwsh`) when installed, else the built-in Windows
+  PowerShell 5.1.
 
 ## Install
 
@@ -60,5 +61,5 @@ Changed something in herdr's own settings? Pull it back into the repo and commit
 or moved), it reports each space's number with `herdr workspace report-metadata … --token "index=N"`, and the
 sidebar row `["state_icon", "$index", "workspace"]` shows it. Before herdr runs it just waits.
 
-To stop it: end the hidden `pwsh` process running `space-index.ps1` and delete `herdr space-index.lnk` from
+To stop it: end the hidden `pwsh` / `powershell` process running `space-index.ps1` and delete `herdr space-index.lnk` from
 your Startup folder (`shell:startup`).
